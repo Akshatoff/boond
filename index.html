@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.4/dist/lenis.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <header>
+    <!-- <header>
       <div>LUNDEV</div>
       <nav>
         <ul>
@@ -16,32 +20,36 @@
           <li>INFO</li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
-    <div class="carousel">
-      <div class="list">
-        <div class="item active" style="--background: #ea3d41">
-          <div class="content">Strawberry</div>
-          <img src="assets/fruit_strawberry.png" class="fruit" />
+    <div class="section" id="home">
+      <div class="carousel">
+        <div class="list">
+          <div class="item active" style="--background: #ea3d41">
+            <div class="content">Strawberry</div>
+            <img src="assets/fruit_strawberry.png" class="fruit" />
+          </div>
+          <div class="item" style="--background: #2d5643">
+            <div class="content">avocado</div>
+            <img src="assets/fruit_avocado.png" class="fruit" />
+          </div>
+          <div class="item hidden" style="--background: #e7a043">
+            <div class="content">orange</div>
+            <img src="assets/fruit_orange.png" class="fruit" />
+          </div>
         </div>
-        <div class="item" style="--background: #2d5643">
-          <div class="content">avocado</div>
-          <img src="assets/fruit_avocado.png" class="fruit" />
-        </div>
-        <div class="item hidden" style="--background: #e7a043">
-          <div class="content">orange</div>
-          <img src="assets/fruit_orange.png" class="fruit" />
-        </div>
-      </div>
-      <div class="leaves"></div>
-      <div class="mockup"></div>
-      <div class="shadow"></div>
-      <div class="arrow">
-        <button id="prev"><</button>
-        <button id="next">></button>
+        <div class="leaves"></div>
+        <div class="mockup"></div>
+        <div class="shadow"></div>
       </div>
     </div>
 
+    <div class="section" id="about"></div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
     <script src="script/script.js"></script>
   </body>
 </html>

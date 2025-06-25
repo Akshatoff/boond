@@ -14,14 +14,30 @@ font-family: 'Roboto', sans-serif; */
   box-sizing: border-box;
 }
 
+:root {
+  --tea: #d4e6b5;
+  --dark: #35524a;
+  --brown: #4b0f0f;
+  --primary: #e20074;
+  --red: #b80c09;
+  --width-mockup: calc(371px / 1.5);
+  --height-mockup: calc(673px / 1.5);
+}
+
 body,
 html {
   width: 100%;
   height: 100%;
+  background-color: var(--tea);
 }
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
 }
 header {
   display: flex;
@@ -48,8 +64,8 @@ header ul {
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden;
-  margin-top: -40px;
+  /* overflow: hidden; */
+  /* margin-top: -40px; */
 }
 
 .list {
@@ -64,7 +80,7 @@ header ul {
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: none;
 }
 .item img.fruit {
@@ -168,12 +184,6 @@ header ul {
     opacity: 0;
   }
 }
-
-:root {
-  --width-mockup: calc(371px / 1.5);
-  --height-mockup: calc(673px / 1.5);
-}
-
 .mockup {
   position: absolute;
   top: 50%;
